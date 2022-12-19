@@ -1,0 +1,8 @@
+font="Noto Sans 10"
+background-color=#262626
+border-radius=10
+border-size=2
+border-color=#62a0ea
+default-timeout=15000
+#width=400
+#height=200

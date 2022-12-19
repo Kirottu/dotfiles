@@ -3,3 +3,8 @@
 !/.config/
 .config/*
 !/.config/hypr/
+!/.config/waybar/
+!/.config/mako/
+!/.config/swaylock/
+!/.config/helix/
+!/.config/kirorunner.css
