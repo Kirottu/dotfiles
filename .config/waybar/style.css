@@ -1,0 +1,89 @@
+#custom-dwl_layout {
+  padding: 0 5px 0 5px;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+#custom-dwl_title {
+  padding: 0 5px 0 5px;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+#custom-dwl_tag {
+  padding: 0 5px 0 5px;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+#custom-dwl_tag.selected {
+  background: #62a0ea;
+  color: #262626;
+  padding: 0 5px 0 5px;
+  border-radius: 10px;
+}
+
+#custom-dwl_tag.urgent {
+  background: #FFA348;
+  color: #ffffff;
+  padding: 0 5px 0 5px;
+  border-radius: 10px;
+}
+
+#custom-dwl_tag.active {
+  padding: 0 5px 0 5px;
+  border-radius: 10px;
+  border-top: 5px solid #9141ac;
+  border-bottom: 5px solid transparent;
+}
+
+#cpu {
+  background: #62a0ea;
+  color: #262626;
+  padding: 0 5px 0 5px;
+  border-radius: 10px;
+  min-width: 60px;
+}
+
+#memory {
+  background: #9141ac;
+  color: #ffffff;
+  padding: 0 5px 0 5px;
+  border-radius: 10px;
+  min-width: 120px;
+}
+
+#pulseaudio {
+  background: #f8e45c;
+  color: #262626;
+  padding: 0 5px 0 5px;
+  border-radius: 10px;
+  min-width: 20px;
+}
+
+#tray {
+  background: #303030;
+  color: #ffffff;
+  padding: 0 5px 0 5px;
+  border-radius: 10px;
+}
+
+#clock {
+  color: #ffffff;
+}
+
+#custom-kiroweather {
+  color: #ffffff;
+}
+
+#mode {
+  background: #f8e45c;
+  color: #262626;
+  padding: 0 5px 0 5px;
+  border-radius: 10px;
+}
+
+window#waybar {
+  background: rgba(38, 38, 38, 0.8);
+  border-radius: 10px;
+}

@@ -1,0 +1,8 @@
+theme = "adwaita-dark"
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.lsp]
+display-messages = true
+
