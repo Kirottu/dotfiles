@@ -83,6 +83,9 @@
         "format": "<span rise=\"1pt\">{used:0.1f}/{total:0.1f}GiB</span> <span font_desc=\"Font Awesome 6 Free 12\"></span>",
         "tooltip": false,
     },
+	"backlight": {
+        "format": "<span rise=\"1pt\">{percent}%</span> <span font_desc=\"Font Awesome 6 Free 11\"></span>",
+    },
 	"pulseaudio": {
         // "scroll-step": 1, // %, can be a float
         "format": "<span rise=\"1pt\">{volume}%</span> <span font_desc=\"Font Awesome 6 Free 11\">{icon}</span>",
