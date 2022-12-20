@@ -58,7 +58,31 @@
   color: #262626;
   padding: 0 5px 0 5px;
   border-radius: 10px;
-  min-width: 20px;
+  min-width: 60px;
+}
+
+#backlight {
+    background: #5bc8af;
+    color: #262626;
+    padding: 0 5px 0 5px;
+    border-radius: 10px;
+    min-width: 60px;
+}
+
+#backlight {
+    background: #5bc8af;
+    color: #262626;
+    padding: 0 5px 0 5px;
+    border-radius: 10px;
+    min-width: 60px;
+}
+
+#battery {
+    background: #57e389;
+    color: #262626;
+    padding: 0 5px 0 5px;
+    border-radius: 10px;
+    min-width: 60px;
 }
 
 #tray {

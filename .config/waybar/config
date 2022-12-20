@@ -10,53 +10,53 @@
 	"margin-right": 10,
 	"margin-top": 10,
     "modules-center": ["custom/kiroweather", "clock"],
-    "modules-right": ["cpu", "memory", "pulseaudio"],
-    "modules-left": ["custom/dwl_tag#1", "custom/dwl_tag#2", "custom/dwl_tag#3", "custom/dwl_tag#4", "custom/dwl_tag#5", "custom/dwl_tag#6", "custom/dwl_tag#7", "custom/dwl_tag#8", "custom/dwl_tag#0"],
+    "modules-right": ["cpu", "memory", "backlight", "pulseaudio", "battery", "tray"],
+    "modules-left": ["custom/dwl_tag#1", "custom/dwl_tag#2", "custom/dwl_tag#3", "custom/dwl_tag#4", "custom/dwl_tag#5", "custom/dwl_tag#6", "custom/dwl_tag#7", "custom/dwl_tag#8", "custom/dwl_tag#9"],
     // The empty '' argument used in the following "exec": fields works for single-monitor setups
     // For multi-monitor setups, see https://github.com/Alexays/Waybar/wiki/Configuration
     //     and enter the monitor id (like "eDP-1") as the first argument to waybar-dwl.sh
     "custom/dwl_tag#1": {
-     "exec": "/home/kirottu/.cargo/bin/hyprcompanion bar workspace 1 2",
+     "exec": "/home/kirottu/.cargo/bin/hyprcompanion bar workspace 1 0",
      "format": "{}",
      "return-type": "json"
     },
     "custom/dwl_tag#2": {
-     "exec": "/home/kirottu/.cargo/bin/hyprcompanion bar workspace 2 2",
+     "exec": "/home/kirottu/.cargo/bin/hyprcompanion bar workspace 2 0",
      "format": "{}",
      "return-type": "json"
     },
     "custom/dwl_tag#3": {
-     "exec": "/home/kirottu/.cargo/bin/hyprcompanion bar workspace 3 2",
+     "exec": "/home/kirottu/.cargo/bin/hyprcompanion bar workspace 3 0",
      "format": "{}",
      "return-type": "json"
     },
     "custom/dwl_tag#4": {
-     "exec": "/home/kirottu/.cargo/bin/hyprcompanion bar workspace 4 2",
+     "exec": "/home/kirottu/.cargo/bin/hyprcompanion bar workspace 4 0",
      "format": "{}",
      "return-type": "json"
     },
     "custom/dwl_tag#5": {
-     "exec": "/home/kirottu/.cargo/bin/hyprcompanion bar workspace 5 2",
+     "exec": "/home/kirottu/.cargo/bin/hyprcompanion bar workspace 5 0",
      "format": "{}",
      "return-type": "json"
     },
     "custom/dwl_tag#6": {
-     "exec": "/home/kirottu/.cargo/bin/hyprcompanion bar workspace 6 2",
+     "exec": "/home/kirottu/.cargo/bin/hyprcompanion bar workspace 6 0",
      "format": "{}",
      "return-type": "json"
     },
     "custom/dwl_tag#7": {
-     "exec": "/home/kirottu/.cargo/bin/hyprcompanion bar workspace 7 2",
+     "exec": "/home/kirottu/.cargo/bin/hyprcompanion bar workspace 7 0",
      "format": "{}",
      "return-type": "json"
     },
     "custom/dwl_tag#8": {
-     "exec": "/home/kirottu/.cargo/bin/hyprcompanion bar workspace 8 2",
+     "exec": "/home/kirottu/.cargo/bin/hyprcompanion bar workspace 8 0",
      "format": "{}",
      "return-type": "json"
     },
     "custom/dwl_tag#9": {
-     "exec": "/home/kirottu/.cargo/bin/hyprcompanion bar workspace 9 2",
+     "exec": "/home/kirottu/.cargo/bin/hyprcompanion bar workspace 9 0",
      "format": "{}",
      "return-type": "json"
     },
@@ -83,10 +83,10 @@
         "format": "<span rise=\"1pt\">{used:0.1f}/{total:0.1f}GiB</span> <span font_desc=\"Font Awesome 6 Free 12\"></span>",
         "tooltip": false,
     },
-    "pulseaudio": {
+	"pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "<span font_desc=\"Font Awesome 6 Free 12\">{format_source}</span>",
-        "format-muted": " {format_source}",
+        "format": "<span rise=\"1pt\">{volume}%</span> <span font_desc=\"Font Awesome 6 Free 11\">{icon}</span>",
+        "format-muted": "<span font_desc=\"Font Awesome 6 Free 11\"></span>",
         "tooltip": false,
         "format-source": "",
         "format-source-muted": "",
@@ -101,6 +101,17 @@
         },
         "on-click": "pavucontrol"
     },
+    "battery": {
+        "interval": 2,
+        "format-charging": "<span rise=\"1pt\">{capacity}%</span> <span font_desc=\"Font Awesome 6 Free 11\"></span>",
+        "format": "<span rise=\"1pt\">{capacity}%</span> <span font_desc=\"Font Awesome 6 Free 11\">{icon}</span>",
+        "format-icons": ["", "", "", ""],
+        "states": {
+            "warning": 40,
+            "critical": 20
+        }
+    },
+
     "tray": {
         // "icon-size": 21,
         "spacing": 10
