@@ -1,6 +1,6 @@
 screenshots
 clock
-fade-in=0.2
+#fade-in=0.2
 
 indicator
 indicator-radius=100

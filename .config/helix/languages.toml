@@ -7,11 +7,17 @@ name = "latex"
 config.texlab.build.executable = "tectonic"
 config.texlab.build.args = [
   "-X",
-  "build",
+  "compile",
+  "%f",
+  "--synctex",
   "--keep-logs",
-  "--keep-intermediates"
+  "--keep-intermediates",
+  "-o",
+  "build",
 ]
+config.texlab.auxDirectory = "build"
 config.texlab.chktex.onOpenAndSave = true
 config.texlab.chktex.onEdit = true
 config.texlab.build.onSave = true
-config.texlab.auxDirecctory = "../build/default"
+config.texlab.forwardSearch.executable = "evince-synctex"
+config.texlab.forwardSearch.args = ["-f", "%l", "%p", "\"code -g %f:%l\""]
