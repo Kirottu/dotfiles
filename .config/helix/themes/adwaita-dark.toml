@@ -42,6 +42,7 @@ diagnostic = { modifiers = ["underlined"] }
 "hint" = { fg = "green", modifiers = ["bold"] }
 "warning" = { fg = "yellow", modifiers = ["bold"] }
 "error" = { fg = "red", modifiers = ["bold"] }
+"diagnostic.error" = { underline = {style = "curl", color = "red"}}
 
 "ui.background" = { bg = "reset" }
 "ui.virtual" = { fg = "faint-gray" }

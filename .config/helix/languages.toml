@@ -11,8 +11,11 @@ config.texlab.build.args = [
   "%f",
   "--synctex",
   "--keep-logs",
-  "--keep-intermediates"
+  "--keep-intermediates",
+  "-o",
+  "build",
 ]
+config.texlab.auxDirectory = "build"
 config.texlab.chktex.onOpenAndSave = true
 config.texlab.chktex.onEdit = true
 config.texlab.build.onSave = true
