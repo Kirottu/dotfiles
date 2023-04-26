@@ -4,7 +4,7 @@ Config(
     hide_plugin_info: true,
     ignore_exclusive_zones: false,
     width: Absolute(800),
-    vertical_offset: Absolute(-300),
+    vertical_offset: Fraction(-0.28),
     layer: Top,
     plugins: [
         "libapplications.so",
