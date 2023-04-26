@@ -3,6 +3,7 @@
 !/.config/
 .config/*
 !/.config/hypr/
+!/.config/anyrun/
 !/.config/waybar/
 !/.config/mako/
 !/.config/swaylock/

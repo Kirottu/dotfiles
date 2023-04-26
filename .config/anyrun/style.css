@@ -1,0 +1,49 @@
+#window {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+box#main {
+  border-radius: 20px;
+  background-color: rgba(38, 38, 38, 0.8);
+}
+
+entry#entry {
+  min-height: 40px;
+  border-radius: 20px;
+  background: transparent;
+  border: none;
+}
+
+list#main {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+}
+
+#plugin {
+  background: transparent;
+  padding-bottom: 3.5px;
+}
+
+#match {
+  padding: 2.5px;
+}
+
+#match:selected {
+  background: transparent;
+  border-right: 4px solid #7e9cd8;
+  border-left: 4px solid #7e9cd8;
+  border-radius: 4px;
+  color: #7e9cd8;
+}
+
+#match:hover {
+  background: transparent;
+}
+
+label#match-desc {
+  font-size: 10px;
+}
+
+label#plugin {
+  font-size: 14px;
+}
