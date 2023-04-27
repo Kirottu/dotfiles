@@ -5,23 +5,24 @@
 box#main {
   border-radius: 20px;
   background-color: rgba(38, 38, 38, 0.8);
+  border: 2px solid #7e9cd8;
 }
 
 entry#entry {
   min-height: 40px;
   border-radius: 20px;
   background: transparent;
+  box-shadow: none;
   border: none;
 }
 
 list#main {
   background-color: rgba(0, 0, 0, 0);
-  border-radius: 10px;
 }
 
 #plugin {
   background: transparent;
-  padding-bottom: 3.5px;
+  padding-bottom: 5px;
 }
 
 #match {

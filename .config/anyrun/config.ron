@@ -1,7 +1,7 @@
 Config(
     width: Absolute(800),
-    vertical_offset: Absolute(0),
-    position: Top,
+    vertical_offset: Fraction(-0.28),
+    position: Center,
     ignore_exclusive_zones: false,
     hide_icons: false,
     hide_plugin_info: true,
