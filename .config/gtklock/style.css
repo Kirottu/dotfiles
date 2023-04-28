@@ -1,0 +1,30 @@
+window {
+   background-image: url("/home/kirottu/Pictures/cursed-harold/1/cursed-harold-big-1080p-bg-forever.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-color: black;
+}
+
+#input-label {
+  font-size: 0px;
+}
+
+entry {
+  min-height: 40px;
+  border-radius: 20px;
+  background-color: rgba(38, 38, 38, 0.8);
+  box-shadow: none;
+  border: 2px solid #7e9cd8;
+}
+
+button {
+	color: transparent;
+	background: transparent;
+	font-size: 0px;
+	min-width: 0px;
+}
+
+#error-label {
+  color: transparent;
+}
