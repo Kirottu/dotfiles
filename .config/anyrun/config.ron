@@ -6,6 +6,7 @@ Config(
     width: Absolute(800),
     vertical_offset: Fraction(-0.28),
     layer: Top,
+    close_on_click: false,
     plugins: [
         "libapplications.so",
         "libsymbols.so",

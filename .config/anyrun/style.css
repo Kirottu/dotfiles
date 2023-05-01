@@ -5,11 +5,12 @@
 box#main {
   border-radius: 20px;
   background-color: rgba(38, 38, 38, 0.8);
+  border: 2px solid #7e9cd8;
 }
 
 entry#entry {
   min-height: 40px;
-  border-radius: 20px 20px 4px 4px;
+  border-radius: 20px;
   background: transparent;
   box-shadow: none;
   border: none;
@@ -42,6 +43,7 @@ list#main {
 
 label#match-desc {
   font-size: 10px;
+  color: #b0b0b0;
 }
 
 label#plugin {
