@@ -3,7 +3,7 @@
 !/.config/
 .config/*
 !/.config/hypr/
-!/.config/waybar/
+!/.config/ironbar/
 !/.config/mako/
 !/.config/swaylock/
 !/.config/helix/
