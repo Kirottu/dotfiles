@@ -5,9 +5,13 @@ Config(
     ignore_exclusive_zones: false,
     hide_icons: false,
     hide_plugin_info: true,
+    close_on_click: false,
+    show_results_immediately: false,
     layer: Top,
+    max_entries: None,
     plugins: [
         "librandr.so",
+        "libtranslate.so",
         "libapplications.so",
         "libkidex.so",
         "libsymbols.so",

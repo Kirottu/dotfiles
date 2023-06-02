@@ -2,6 +2,7 @@
 !/.gitignore
 !/.config/
 .config/*
+!/.config/gtklock/
 !/.config/hypr/
 !/.config/anyrun/
 !/.config/waybar/
