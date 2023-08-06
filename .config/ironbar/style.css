@@ -4,15 +4,15 @@
   background: rgba(38, 38, 38, 0.8);
 }
 
-#workspaces .item {
+.workspaces .item {
   background: transparent;
 }
 
-#clock {
+.clock {
   background: transparent;
 }
 
-#sysinfo #item {
+.sysinfo .item {
   border-radius: 10px;
   background: #7e9cd8;
   color: rgba(38, 38, 38, 1);
@@ -20,11 +20,11 @@
   padding-right: 10px;
 }
 
-#sysinfo {
+.sysinfo {
   margin-right: 5px;
 }
 
-#workspaces .item.focused {
+.workspaces .item.focused {
   background: #7e9cd8;
   color: rgba(38, 38, 38, 1);
   border-radius: 10px;
