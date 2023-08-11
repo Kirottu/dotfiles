@@ -1,0 +1,4 @@
+Config(
+    allow_invalid: true,
+    max_entries: 5,
+)
