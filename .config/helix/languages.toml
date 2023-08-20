@@ -21,3 +21,26 @@ config.texlab.chktex.onEdit = true
 config.texlab.build.onSave = true
 config.texlab.forwardSearch.executable = "evince-synctex"
 config.texlab.forwardSearch.args = ["-f", "%l", "%p", "\"code -g %f:%l\""]
+
+[[language]]
+name = "typst"
+scope = "source.typst"
+injection-regex = "^typ(st)?$"
+file-types = ["typ"]
+comment-token = "//"
+indent = { tab-width = 2, unit = "  " }
+roots = []
+language-server = { command = "typst-lsp" }
+config = { exportPdf = "onType"}
+
+[language.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+'`' = '`'
+'$' = '$'
+
+[[grammar]]
+name = "typst"
+source = { path = "/home/kirottu/git/tree-sitter-typst" }

@@ -1,0 +1,7 @@
+Config(
+    prefix: "?",
+    engines: [Google, Custom(
+        name: "SearX",
+        url: "searx.be/?q={}"
+    )],
+)
