@@ -12,3 +12,6 @@
 .config/helix/runtime
 !/.config/kirorunner.css
 !/.config/watershot.ron
+!/.config/swaync
+!/.config/river
+

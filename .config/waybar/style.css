@@ -1,41 +1,30 @@
-#custom-dwl_layout {
+#tags button {
   padding: 0 5px 0 5px;
   color: #ffffff;
   border-radius: 10px;
+  margin-right: 5px;
 }
 
-#custom-dwl_title {
+#tags button.occupied {
   padding: 0 5px 0 5px;
-  color: #ffffff;
   border-radius: 10px;
+  background: rgba(145, 65, 172, 0.3);
 }
 
-#custom-dwl_tag {
-  padding: 0 5px 0 5px;
-  color: #ffffff;
-  border-radius: 10px;
-}
-
-#custom-dwl_tag.selected {
+#tags button.focused {
   background: #62a0ea;
   color: #262626;
   padding: 0 5px 0 5px;
   border-radius: 10px;
 }
 
-#custom-dwl_tag.urgent {
+#tags button.urgent {
   background: #FFA348;
   color: #ffffff;
   padding: 0 5px 0 5px;
   border-radius: 10px;
 }
 
-#custom-dwl_tag.active {
-  padding: 0 5px 0 5px;
-  border-radius: 10px;
-  border-top: 5px solid #9141ac;
-  border-bottom: 5px solid transparent;
-}
 
 #cpu {
   background: #62a0ea;
@@ -62,35 +51,35 @@
 }
 
 #backlight {
-    background: #5bc8af;
-    color: #262626;
-    padding: 0 5px 0 5px;
-    border-radius: 10px;
-    min-width: 60px;
+  background: #5bc8af;
+  color: #262626;
+  padding: 0 5px 0 5px;
+  border-radius: 10px;
+  min-width: 60px;
 }
 
 #backlight {
-    background: #5bc8af;
-    color: #262626;
-    padding: 0 5px 0 5px;
-    border-radius: 10px;
-    min-width: 60px;
+  background: #5bc8af;
+  color: #262626;
+  padding: 0 5px 0 5px;
+  border-radius: 10px;
+  min-width: 60px;
 }
 
 #custom-battery {
-    background: #57e389;
-    color: #262626;
-    padding: 0 5px 0 5px;
-    border-radius: 10px;
-    min-width: 60px;
+  background: #57e389;
+  color: #262626;
+  padding: 0 5px 0 5px;
+  border-radius: 10px;
+  min-width: 60px;
 }
 
 #battery {
-    background: #57e389;
-    color: #262626;
-    padding: 0 5px 0 5px;
-    border-radius: 10px;
-    min-width: 60px;
+  background: #57e389;
+  color: #262626;
+  padding: 0 5px 0 5px;
+  border-radius: 10px;
+  min-width: 60px;
 }
 
 #tray {

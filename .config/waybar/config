@@ -11,55 +11,10 @@
 	"margin-top": 10,
     "modules-center": ["custom/kiroweather", "clock"],
     "modules-right": ["cpu", "memory", "backlight", "pulseaudio", "battery", "tray"],
-    "modules-left": ["custom/dwl_tag#1", "custom/dwl_tag#2", "custom/dwl_tag#3", "custom/dwl_tag#4", "custom/dwl_tag#5", "custom/dwl_tag#6", "custom/dwl_tag#7", "custom/dwl_tag#8", "custom/dwl_tag#9"],
+    "modules-left": ["river/tags", "river/window"],
     // The empty '' argument used in the following "exec": fields works for single-monitor setups
     // For multi-monitor setups, see https://github.com/Alexays/Waybar/wiki/Configuration
     //     and enter the monitor id (like "eDP-1") as the first argument to waybar-dwl.sh
-    "custom/dwl_tag#1": {
-     "exec": "/home/kirottu/.cargo/bin/hyprcompanion bar workspace 1 0",
-     "format": "{}",
-     "return-type": "json"
-    },
-    "custom/dwl_tag#2": {
-     "exec": "/home/kirottu/.cargo/bin/hyprcompanion bar workspace 2 0",
-     "format": "{}",
-     "return-type": "json"
-    },
-    "custom/dwl_tag#3": {
-     "exec": "/home/kirottu/.cargo/bin/hyprcompanion bar workspace 3 0",
-     "format": "{}",
-     "return-type": "json"
-    },
-    "custom/dwl_tag#4": {
-     "exec": "/home/kirottu/.cargo/bin/hyprcompanion bar workspace 4 0",
-     "format": "{}",
-     "return-type": "json"
-    },
-    "custom/dwl_tag#5": {
-     "exec": "/home/kirottu/.cargo/bin/hyprcompanion bar workspace 5 0",
-     "format": "{}",
-     "return-type": "json"
-    },
-    "custom/dwl_tag#6": {
-     "exec": "/home/kirottu/.cargo/bin/hyprcompanion bar workspace 6 0",
-     "format": "{}",
-     "return-type": "json"
-    },
-    "custom/dwl_tag#7": {
-     "exec": "/home/kirottu/.cargo/bin/hyprcompanion bar workspace 7 0",
-     "format": "{}",
-     "return-type": "json"
-    },
-    "custom/dwl_tag#8": {
-     "exec": "/home/kirottu/.cargo/bin/hyprcompanion bar workspace 8 0",
-     "format": "{}",
-     "return-type": "json"
-    },
-    "custom/dwl_tag#9": {
-     "exec": "/home/kirottu/.cargo/bin/hyprcompanion bar workspace 9 0",
-     "format": "{}",
-     "return-type": "json"
-    },
     "custom/kiroweather": {
         "exec": "/home/kirottu/.cargo/bin/kw-client current_fmt '%desc %temp°C'",
         
