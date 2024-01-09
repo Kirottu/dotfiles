@@ -104,7 +104,8 @@ riverctl map normal Super L spawn 'loginctl lock-session'
 riverctl map normal Super D spawn 'anyrun'
 riverctl map normal None Print spawn 'watershot -c directory /home/kirottu/Pictures/Screenshots'
 riverctl map normal Super Return spawn alacritty
-riverctl map normal Super+Shift N spawn 'makoctl menu anyrun --show-results-immediately true --plugins libstdin.so'
+riverctl map normal Super+Shift A spawn 'makoctl menu anyrun --show-results-immediately true --plugins libstdin.so'
+riverctl map normal Super A spawn 'makoctl invoke'
 riverctl map normal Super N spawn 'makoctl dismiss'
 
 # Set background and border color
