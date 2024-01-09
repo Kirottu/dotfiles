@@ -119,6 +119,7 @@ riverctl border-color-unfocused 0x595959
 riverctl set-repeat 40 300
 riverctl keyboard-layout fi
 
+riverctl set-cursor-warp on-focus-change
 riverctl focus-follows-cursor normal
 riverctl hide-cursor when-typing enabled
 riverctl hide-cursor timeout 10000
