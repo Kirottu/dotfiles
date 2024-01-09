@@ -7,6 +7,8 @@
 !/.config/mako/
 !/.config/swaylock/
 !/.config/helix/
+/.config/helix/runtime
 !/.config/anyrun/
 !/.config/kirorunner.css
 !/.config/watershot.ron
+!/.config/river

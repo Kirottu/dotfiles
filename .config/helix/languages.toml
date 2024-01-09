@@ -1,23 +1,31 @@
 [[language]]
 name = "rust"
+
+[language-server.rust-analyzer]
 config.checkOnSave.command = "clippy"
 
+[language-server.typst-lsp]
+command = "typst-lsp"
+config = { exportPdf = "onType"}
+
 [[language]]
-name = "latex"
-config.texlab.build.executable = "tectonic"
-config.texlab.build.args = [
-  "-X",
-  "compile",
-  "%f",
-  "--synctex",
-  "--keep-logs",
-  "--keep-intermediates",
-  "-o",
-  "build",
-]
-config.texlab.auxDirectory = "build"
-config.texlab.chktex.onOpenAndSave = true
-config.texlab.chktex.onEdit = true
-config.texlab.build.onSave = true
-config.texlab.forwardSearch.executable = "evince-synctex"
-config.texlab.forwardSearch.args = ["-f", "%l", "%p", "\"code -g %f:%l\""]
+name = "typst"
+scope = "source.typst"
+injection-regex = "^typ(st)?$"
+file-types = ["typ"]
+comment-token = "//"
+indent = { tab-width = 2, unit = "  " }
+roots = []
+language-servers = [ "typst-lsp" ]
+
+[language.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+'`' = '`'
+'$' = '$'
+
+[[grammar]]
+name = "typst"
+source = { path = "/home/kirottu/git/tree-sitter-typst" }
