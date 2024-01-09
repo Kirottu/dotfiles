@@ -6,23 +6,18 @@
 }
 
 #tags button.occupied {
-  padding: 0 5px 0 5px;
-  border-radius: 10px;
-  background: rgba(145, 65, 172, 0.3);
+  color: #62a0ea;
 }
 
 #tags button.focused {
   background: #62a0ea;
   color: #262626;
   padding: 0 5px 0 5px;
-  border-radius: 10px;
 }
 
 #tags button.urgent {
   background: #FFA348;
   color: #ffffff;
-  padding: 0 5px 0 5px;
-  border-radius: 10px;
 }
 
 

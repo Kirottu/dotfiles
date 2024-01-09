@@ -8,7 +8,6 @@ Config(
     ignore_exclusive_zones: false,
     layer: Top,
     close_on_click: false,
-    show_results_immediately: false,
     plugins: [
         "libapplications.so",
         "libsymbols.so",
